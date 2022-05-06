@@ -1,0 +1,102 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 25.5pt;
+    text-decoration: none;
+}
+
+h1 {
+    width: 100%;
+    left: 0;
+    top: 50%;
+    background-color: black;
+    opacity: 0.85;
+    font-size: 4em;
+    letter-spacing: 10px;
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+
+h3 {
+    letter-spacing: 5px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+article {
+    padding: 40px 15%;
+    font-size: 1.5em;
+    -webkit-box-shadow: 20px 20px 30px black;
+    box-shadow: 20px 20px 30px black;
+    position: relative;
+    text-align: justify;
+}
+
+/* Pour un DOM article sur 2 le style change */
+
+article:nth-of-type(2n+1) {
+    background-color: white;
+    color: black;
+}
+
+article:nth-of-type(2n) {
+    background-color: #7b7b7b;
+    color: white;
+}
+
+video {
+    position: relative;
+    width: 100%;
+    /* enlever espace sous la vidéo */
+    display: block;
+}
+
+.img1, .bgimg {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1 {
+    height: 100%;
+    opacity: 0.65;
+}
+
+.bgimg {
+    min-height: 400px;
+    width: 100%;
+}
+
+#page_header_title {
+    height: 50px;
+    width: 100%;
+    top: 0;
+    -webkit-box-shadow: 0 10px 30px black;
+    box-shadow: 0 10px 30px black;
+    background-color: #d7d7d7;
+    z-index: 1;
+    position: fixed;
+}
+
+#page_header_title h2 {
+    margin-top: -14px;
+    font-size: 4em;
+    text-align: right;
+    letter-spacing: 0.5em;
+    color: #484747;
+}
+
+/*Responsive: pour les fenêtres ayant une largeur inférieure à 1000px
+le titre dans le bandeau est enlevé */
+
+@media (max-width:1000px) {
+    #page_header_title h2 {
+        visibility: hidden;
+    }
+}

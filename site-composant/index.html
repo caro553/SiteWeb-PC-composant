@@ -1,0 +1,139 @@
+<!--
+ Copyright (c) 2018 Cretin Gabriel & Sophie Lematre
+
+Sources of inspiration and help docs :
+* Docs and tutorials:
+    - https://developer.mozilla.org/fr/
+    - https://www.w3schools.com/
+    - https://www.alsacreations.com/
+    - G. Moroy courses :)
+* Images:
+    - https://pixabay.com/
+    - https://www.pexels.com/
+    - Google images
+* CV:
+    - https://templateflip.com/
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <title> Choisir ses composants </title>
+        <meta name="author" content="Carolina Vinkovic" />
+        <meta charset="utf-8" />
+        <!-- CSS -->
+        <!-- Pour la police -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <!-- Pour les icônes en bas de la page -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/menu_footer.css">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <!-- Javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src='js/projet.js'></script>
+    </head>
+
+    <body>
+        <header>
+            <nav id="sideNav">
+                <p> Composants </p>
+                <a href="cpu.html">CPU</a>
+                <a href="gpu.html">Carte Graphique</a>
+                <a href="hd.html">Disque Dur</a>
+                <a href="ram.html">RAM</a>
+                <a href="ecran.html">Écran</a>
+                <a href="carte_mere.html">Carte Mère</a>
+                <a href="Carolina_Vinkovic.pdf" class="cv" target="_blank">CV</a>
+                <br />
+                <br />
+            </nav>
+            <div class="burger">
+                <div class="bar top"></div>
+                <div class="bar middle"></div>
+                <div class="bar bottom"></div>
+            </div>
+            <a id="pegasus" href="./index.html">M E G A S U S</a>
+            <section id="head-page">
+                <div id="title">
+                    <a href="#scroll-down" class="scrollTo">
+                        <h1>
+                            Comment choisir les composants de son PC ?
+                        </h1>
+                    </a>
+                </div>
+            </section>
+        </header>
+        <div id="separator"></div>
+        <div id="main">
+            <div class="wrapper" id="scroll-down">
+                <div class="container"> <img src="./images/system.jpg" alt="CPU" />
+                    <a href="./cpu.html">
+                        <div class="overlay">
+                            <p class="text"> CPU </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="container"> <img src="./images/gpu.jpg" alt="GPU" />
+                    <a href="./gpu.html">
+                        <div class="overlay">
+                            <p class="text"> GPU </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="container"> <img src="./images/hd.jpg" alt="Disque dur" />
+                    <a href="./hd.html">
+                        <div class="overlay">
+                            <p class="text"> Disque dur </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="container"> <img src="./images/ram.png" alt="RAM" />
+                    <a href="./ram.html">
+                        <div class="overlay">
+                            <p class="text"> RAM </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="container"> <img src="./images/screen.jpg" alt="Écran" />
+                    <a href="./ecran.html">
+                        <div class="overlay">
+                            <p class="text"> Écran </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="container"> <img src="./images/motherboard.jpg" alt="Carte Mère" />
+                    <a href="./carte_mere.html">
+                        <div class="overlay">
+                            <p class="text"> Carte Mère </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="formulaire">
+                <h2>Prenez contact !</h2>
+                <form action="javascript:alert('Merci pour votre message.');">
+                    <input name="name" placeholder="Nom" type="text" required>
+                    <input name="email" placeholder="Email" type="text" pattern="^[a-z0-9._+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <input name="subject" placeholder="Objet" type="text" required>
+                    <textarea name="message" placeholder="Message" rows="7" required></textarea>
+                    <input class="special" value="Envoyer" type="submit">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <ul class="icons">
+              
+               
+               
+                <li>
+                    <a href="https://github.com/caro553" class="icon circle fa fa-github"></a>
+                </li>
+            </ul>
+            <ul class="copyright">
+                <li>© Megasus</li>
+            </ul>
+        </footer>
+    </body>
+
+</html>
